@@ -12,6 +12,47 @@
 </head> 
 <body>
     <header>
+      <div class="menu-hamburguer"id="menu-hamburguer">
+
+        <div class="hamburger">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+        </div>
+        
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu2">
+                    <li class="menu-item"><a href="#" class="menu-link">HOME</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">BIBLIOTECA</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">LOGIN</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">SUPORTE</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">SOBRE</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+      
+      <div class="usuario-btn"id="loginBtn">
+        <button><i class="fa-solid fa-user"></i></button>
+    </div>
+      <div id="loginPopup">
+        <div class="popupContent">
+          <h2>Login</h2>
+          <form>
+            <label for="username">Nome de usuário:</label>
+            <input type="text" id="username" name="username"><br>
+    
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password"><br>
+    
+            <input type="submit" value="Entrar">
+          </form>
+          <button id="closeBtn">Fechar</button>
+        </div>
+      </div>
+   
+
         <div class="container">
             <div class="logo"><a href="index.html" class="active">EVOCKER</a></div>
             <div class = headerColorido></div>
@@ -31,10 +72,7 @@
             </div>
             <div class="logout-btn">
                 <button><i class="fa-solid fa-right-from-bracket"></i></button>
-            </div>
-            <div class="usuario-btn">
-                <button><i class="fa-solid fa-user"></i></button>
-            </div>
+            </div>        
             <div class="carrinho-btn">
                 <button><i class="fa-solid fa-cart-shopping"></i></button>
             </div>
@@ -71,11 +109,38 @@
               <label  for="radio2" class="manual-btn"></label>
               <label  for="radio3" class="manual-btn"></label>
             </div>
-      
-          </div>
+        
+     
      </section>
 
-
-
+     <div class="gallery-container">
+      
+      <a href="imagensGaleria/deadby.jpg" class="gallery-items">
+          <img src="imagensGaleria/deadby.jpg"Chick Hicks">
+      </a>
+      <a href="imagensGaleria/death stranding.jpg" class="gallery-items">
+          <img src="imagensGaleria/death stranding.jpg" alt="Doctor Hudson">
+      </a>
+      <a href="imagensGaleria/horizon.jpg" class="gallery-items">
+          <img src="imagensGaleria/horizon.jpg" alt="Fillmore">
+      </a>
+      <a href="imagensGaleria/God-of-War.jpg" class="gallery-items">
+        <img src="imagensGaleria/God-of-War.jpg" alt="a">
+    </a>
+    <a href="imagensGaleria/slime rancher2.jpg" class="gallery-items">
+      <img src="imagensGaleria/slime rancher2.jpg" alt="aa">
+      <a href="imagensGaleria/doom.jpg" class="gallery-items">
+        <img src="imagensGaleria/doom.jpg" alt="aa">
+    </a>
+    <a href="imagensGaleria/dark souls.jpg" class="gallery-items">
+      <img src="imagensGaleria/dark souls.jpg" alt="aa">
+    </a>
+    <a href="imagensGaleria/hades.jpg" class="gallery-items">
+      <img src="imagensGaleria/hades.jpg" alt="aa">
+    </a>
+    <a href="imagensGaleria/hollow-knight-1280x720.jpg" class="gallery-items">
+      <img src="imagensGaleria/hollow-knight-1280x720.jpg" alt="aa">
+    </a>
+  </a>
 </body>
 </html>

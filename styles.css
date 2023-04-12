@@ -28,9 +28,167 @@
 
 body{
     background: linear-gradient(to bottom, var(--color-background1), var(--color-background2) 100%);
-    height: 200vh;
+    height: 300vh;
 }
 
+h2{
+    color: #fff;
+}
+#loginPopup {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+.popupContent {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #121212;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+label {
+	margin-bottom: 10px;
+    color: #f2f2f2;
+}
+
+input {
+	margin-bottom: 20px;
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+	background-color: #007bff;
+	color: #fff;
+	padding: 10px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #0062cc;
+}
+
+#closeBtn {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 5px 10px;
+	background-color: #fff;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+#closeBtn:hover {
+	background-color: #f2f2f2;
+}
+#menu-hamburguer{
+    z-index: 6;
+}
+.hamburger{
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    z-index: 5;
+    right: 2rem;
+    top: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    
+}
+
+
+.show-menu .hamburger{
+    right: 16rem;
+
+}
+
+.line{
+    width: 100%;
+    height: .1rem;
+    padding: 1px;
+    border-radius: 10px;
+    background-color: rgb(0, 255, 179);
+    box-shadow: 0.1rem 0.1rem 3px rgba(0, 0, 0, 0.788);
+    transition: transform .7s;
+}
+
+.show-menu #line1{
+    transform: rotate(45deg) translate(.4rem, .9rem);
+    background-color: rgb(224, 49, 102);
+    box-shadow: none;
+}
+
+.show-menu #line2{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show-menu #line3{
+    transform: rotate(-45deg) translate(.3rem, -.9rem);
+    background-color: rgb(224, 49, 102);
+    box-shadow: none;
+}
+
+.sidebar{
+    width: 20rem;
+    height: 100vh;
+    background: linear-gradient(329.54deg, #111111 0%, #222222 100%);
+    box-shadow: 10px 5px 15px 10px rgba(0, 0, 0, 0.582);
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    transition: all .8s;
+}
+
+.show-menu .sidebar{
+    right: 0;
+}
+
+.menu2{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-item{
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.menu-link{
+    font-family:sans-serif;
+    font-size: 2rem;
+    color: rgb(245, 245, 245);
+    transition: color .7s;
+}
+
+.menu-link:hover{
+    color: rgb(0, 255, 255);
+    transition: color .7s;
+}
 .container{
     max-width: 1200px;
     display: flex;
@@ -49,8 +207,10 @@ body{
 }
 
 header{
+    z-index: 6;
     background-color: #232526;
     width: 100%;
+    height: 50px;
     padding: 10px;
     background-color: var(--color-backgroundVariante);
     box-shadow: 1px 1px 4px var(--color-background2);
@@ -217,4 +377,53 @@ header{
     position: absolute;  
     top: 12px;
     right: 260px;
+}
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 2vw;
+    position: absolute;
+    top: 1000px;
+}
+h1{
+
+    color: #fff;
+    font-size: 3em;
+}
+.gallery-items{
+    
+    width: 512px;
+    height: 512px;
+    border: 5px solid #FFF;
+    box-shadow: 5px 5px 5px #0006;
+    flex-grow: 1;
+    transition: transform .5s linear;
+}
+.gallery-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-items:hover{
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width:1000px){
+    .menu a,.sociais,.slider,button{
+        display: none;
+    }
+}
+@media screen and (min-width:1000px){
+    .hamburger{
+        display: none;
+    }
+}
+@media screen and (max-width:1000px){
+    .hamburger{
+        display: flex;
+        z-index: 1000;
+    }
 }
