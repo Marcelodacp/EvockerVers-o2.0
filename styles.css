@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+
+
+:root{
+    --color-white: #fff;
+    --color-background1:#232526;
+    --color-background2: #000000;
+    --color_backgroundVariante: #434343;
+    --color_1: #f94144;
+    --color_2: #f3722c;
+    --color_3: #f8961e;
+    --color_4: #f9844a;
+    --color_5: #f9c74f;
+    --color_6: #90be6d;
+    --color_7: #43aa8b;
+    --color_8: #4d908e;
+    --color_9: #577590;
+    --color_10: #277da1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body{
+    background: linear-gradient(to bottom, var(--color-background1), var(--color-background2) 100%);
+    height: 200vh;
+}
+
+.container{
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerColorido{
+    background: linear-gradient(to right, #f94144,#f3722c,#f8961e,#f9844a,#f9c74f,#90be6d,#43aa8b,#4d908e,#577590,#277da1 100% );
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 1px;
+}
+
+header{
+    background-color: #232526;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-backgroundVariante);
+    box-shadow: 1px 1px 4px var(--color-background2);
+}
+
+.logo, .sociais, .user{
+    width: 10%; 
+}
+
+.logo a{
+    position: absolute;
+    top: 7.5px;
+    left: 50px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+    -225deg,
+    #f94144,
+    #f3722c,
+    #f8961e,
+    #f9844a,
+    #f9c74f,
+    #90be6d,
+    #43aa8b,
+    #4d908e,
+    #577590,
+    #277da1
+
+    );
+
+  background-size: auto auto;
+
+  background-clip: border-box;
+
+  background-size: 200% auto;
+
+  background-clip: text;
+
+  
+  text-emphasis-color: transparent;
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  animation: textclip 10s linear infinite;
+  display: inline-block;
+
+}
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+.menu{
+    width: 50%;
+}
+
+.menu a{
+    margin-right: 25px;
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+.menu nav a{
+    background: 
+    linear-gradient(
+        to right,
+         var(--color-background1),
+         var(--color-background1)),
+
+    linear-gradient(
+        to right, 
+        #f94144,
+        #f3722c,
+        #f8961e,
+        #f9844a,
+        #f9c74f,
+        #90be6d,
+        #43aa8b,
+        #4d908e,
+        #577590,
+        #277da1 
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%,0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 500ms;
+    
+}
+
+.menu a:hover{
+    background-size: 0 3px, 100% 3px;
+}
+
+.sociais button{
+    width: 30px;
+    height: 30px;
+    background-image: linear-gradient(45deg, #828282, #e2e1e1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.sociais button i{
+    font-size: 17px;
+    color: #232526;
+}
+
+.logout-btn button{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;  
+    top: 12px;
+    right: 200px;
+}
+
+.logout-btn button i{
+    font-size: 18px;
+    color: #fff;
+}
+
+.usuario-btn button{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;  
+    top: 12px;
+    right: 230px;
+}
+
+.usuario-btn button i, .carrinho-btn button i{
+    font-size: 18px;
+    color: #fff;
+}
+
+.carrinho-btn button{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;  
+    top: 12px;
+    right: 260px;
+}
