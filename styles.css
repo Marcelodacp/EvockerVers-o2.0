@@ -385,7 +385,7 @@ header{
     gap: 2vw;
     padding: 0 2vw;
     position: absolute;
-    top: 1000px;
+    top: 1200px;
 }
 h1{
 
@@ -427,3 +427,53 @@ h1{
         z-index: 1000;
     }
 }
+#filter-btn-box {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  #galeria-area .filter-btn {
+    color: #444;
+    border: 1px solid #444;
+    background-color: transparent;
+    text-transform: none;
+    margin: 0 15px;
+    min-width: 100px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+  }
+  
+  #galeria-area .filter-btn.active, #portfolio-area .filter-btn:hover {
+    color: #FFF;
+    border: 1px solid #ae42c9;
+    background-color: #ae42c9;
+  }
+  .containe{
+    padding: 70px 0;
+  }
+  .row {
+    margin: 0;
+  }
+  .main-btn {
+    background-color: #ae42c9;
+    color: #FFF;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+    position: relative;
+    top: 1000px;
+
+  }
+  
+  .main-btn:hover {
+    text-decoration: none;
+    color: #FFF;
+    background-color: transparent;
+    border-color: #ae42c9;
+  }
