@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" />
+
+    <title>EVOCKER</title>
+    <link rel="stylesheet" href="styleLoja.css" />
+</head>
+<body>
+
+    <!-- modelos de jogo na lista e no carrinho -->
+    <div class="models">
+
+        <!-- jogo na lista -->
+        <div class="jogo-item">
+            <a href="">
+                <div class="jogo-item--img"><img src="" /></div>
+                <div class="jogo-item--add">+</div>
+            </a>
+            <div class="jogo-item--price">R$ --</div>
+            <div class="jogo-item--name">--</div>
+            <div class="jogo-item--desc">--</div>
+        </div>
+
+        <!-- jogo no carrinho -->
+        <div class="cart--item">
+            <img src="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- /models -->
+
+    <!-- .menu-openner aparecera no modo mobile -->
+    <header>
+        <div class="logo"><a onclick= "window.location.href = 'index.html';"class="active">EVOCKER</a></div>
+        <div class="menu-openner"><span>0</span>🛒</div>
+    </header>
+    <!-- /menu-openner -->
+
+    <!-- conteudo principal -->
+    <main>
+        
+        <h2>Loja de jogos</h2>
+
+        <div class="jogo-area"></div>
+    </main>
+    <!-- /conteudo principal -->
+
+    <!-- aside do carrinho -->
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer">❌</div>
+            <h1>Seus jogos</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--finalizar">Finalizar a compra</div>
+            </div>
+        </div>
+    </aside>
+    <!-- /aside do carrinho -->
+
+    <!-- janela modal .jogoWindowArea -->
+    <div class="jogoWindowArea">
+        <div class="jogoWindowBody">
+            <div class="jogoInfo--cancelMobileButton">Voltar</div>
+            <div class="jogoBig">
+                <img src="" />
+            </div>
+            <div class="jogoInfo">
+                <h1>--</h1>
+                <div class="jogoInfo--desc">--</div>
+                
+                <div class="jogoInfo--pricearea">
+                    <div class="jogoInfo--sector">Preço</div>
+                    <div class="jogoInfo--price">
+                        <div class="jogoInfo--actualPrice">R$ --</div>
+                        <div class="jogoInfo--qtarea">
+                            <button class="jogoInfo--qtmenos">-</button>
+                            <div class="jogoInfo--qt">1</div>
+                            <button class="jogoInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="jogoInfo--addButton">Adicionar ao carrinho</div>
+                <div class="jogoInfo--cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
+    <!-- /janela modal .jogoWindowArea -->
+
+    <script src="jogos.js"></script>
+    <script src="scriptLoja.js"></script>
+</body>
+</html>

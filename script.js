@@ -67,4 +67,3 @@ $('.filter-btn').on('click', function() {
         });
       }
     }
-  

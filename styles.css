@@ -406,9 +406,6 @@ h1{
     height: 100%;
     object-fit: cover;
 }
-.gallery-items:hover{
-    transform: scale(1.1);
-}
 
 
 @media screen and (max-width:1000px){
@@ -427,6 +424,7 @@ h1{
         z-index: 1000;
     }
 }
+
 #filter-btn-box {
     margin-bottom: 50px;
     text-align: center;
